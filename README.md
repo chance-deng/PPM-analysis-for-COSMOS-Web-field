@@ -7,5 +7,5 @@ COSMOS2025:[https://cosmos2025.iap.fr/catalog.html](https://cosmos2025.iap.fr/ca
 
 ---
 
-![png](https://github.com/chance-deng/PPM-analysis-for-COSMOS-Web-field/edit/main/PPM_workflow.png)
+![png](workflow.png)
 
