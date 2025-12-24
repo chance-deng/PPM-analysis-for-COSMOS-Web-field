@@ -4,3 +4,7 @@ We use a sample of 449 SMGs from the $A^{3}COSMOS$ catalog and control samples o
 Detail for $A^{3}COSMOS$:[https://sites.google.com/view/a3cosmos](https://sites.google.com/view/a3cosmos);[http://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/685/A1](http://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/685/A1)
 
 COSMOS2025:[https://cosmos2025.iap.fr/catalog.html](https://cosmos2025.iap.fr/catalog.html)
+
+---
+
+
