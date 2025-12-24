@@ -118,11 +118,11 @@ theta_w_arcmin: Projected positional offset between SMGs and overdensity peaks, 
 
 ---
 
-### 2.3 redshift match SFGs: z_mass_match_unique.fits
+### 2.3 redshift match SFGs: zmcombine_unique.fits
 
 Main parameters:
 
-ID_1: Beacon(SFG)'s id from $COSMOS2025$ catalog;
+MSG_ID: Beacon(SFG)'s id from $COSMOS2025$ catalog;
 
 candidate_z_mean: redshift of the over-density peak $z_{ov}$;
 
