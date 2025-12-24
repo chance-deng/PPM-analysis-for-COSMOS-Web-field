@@ -15,7 +15,7 @@ COSMOS2025:[https://cosmos2025.iap.fr/catalog.html](https://cosmos2025.iap.fr/ca
 
 ## SMG:
 
-400 SMGs have ppm analysis result. All the information see $\delta 400_final.fits$.
+400 SMGs have ppm analysis result. All the information see $\delta$ 400_final.fits.
 
 Main parameters:
 
