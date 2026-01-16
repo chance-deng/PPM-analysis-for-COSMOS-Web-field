@@ -36,9 +36,9 @@ Contain over 1500 overdensity candidates meet Category E.
 
 Main parameters:
 
-ID_COSMOS2025: Beacon(SMG)'s id from $A^{3}COSMOS$ catalog;
-
-ID_A3COSMOS: Beacon(SMG)'s id from $A^{3}COSMOS$ catalog, data version 20220606;
+| ID_COSMOS2025: | Beacon(SMG)'s id from $A^{3}COSMOS$ catalog;                        |
+| ------------   | ------------------------------------------------------------------- | 
+| ID_A3COSMOS:   | Beacon(SMG)'s id from $A^{3}COSMOS$ catalog, data version 20220606; |
 
 peak_ra: over-dnesity peak projected coordinates (RA[J2000] deg);
 
