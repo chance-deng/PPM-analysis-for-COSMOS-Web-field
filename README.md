@@ -11,11 +11,11 @@ Details for catalog:
 [COSMOS2025](https://cosmos2025.iap.fr/catalog.html)
 
 ---
-# Workflow.
-
-![PPM workflow](workflow.png)
+# PPM Workflow.
 
 For detailed steps, please refer to the paper: XXX
+
+![PPM workflow](workflow.png)
 
 ---
 
