@@ -45,7 +45,7 @@ Contain over 1500 overdensity candidates meet Category E.
 | 7   | candidate_rmax_median     | the average of the maximum distances in the peak interval of this (proto)cluster is used as the estimate of its projected radius $R_{PPM}$, in units of arcmin                        |
 | 8   | candidate_richness       | the number of these sources is taken as the estimate of the (proto)cluster richness $N_{select}$ |
 | 9   | candidate_significance     | Beacon(SMG)'s id from $A^{3}COSMOS$ catalog                        |
-| 10   | delta_z       | Redshift peak offset |$z<sub>ov</sub>-z<sub>beacon</sub>$| |
+| 10   | delta_z       | Redshift peak offset z<sub>ov</sub>-z<sub>beacon</sub> |
 | 11   | peak_ov_density     | the overdensity value $\delta$ of the over-density peak projected coordinates                       |
 | 12   | R_w_arcmin       | the overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
 | 13   | R_w_kpc     | the overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc                        |
