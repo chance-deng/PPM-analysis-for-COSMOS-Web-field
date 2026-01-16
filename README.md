@@ -36,14 +36,14 @@ Contain over 1500 overdensity candidates meet Category E.
 
 | No. | Header name	      | Description
 | --- | ----------------- | --------------------------------------------------------- | 
-| 1   | ID_COSMOS2025     | Beacon(SMG)'s id from $A^{3}COSMOS$ catalog                        |
+| 1   | `ID_COSMOS2025`     | Beacon(SMG)'s id from $A^{3}COSMOS$ catalog                        |
 | 2   | ID_A3COSMOS       | Beacon(SMG)'s id from $A^{3}COSMOS$ catalog, data version 20220606 |
 | 3   | peak_ra     | over-dnesity peak projected coordinates (RA[J2000] deg)                        |
 | 4   | peak_dec       | over-dnesity peak projected coordinates (Dec[J2000] deg) |
 | 5   | candidate_z_mean     | redshift of the over-density peak $z_{ov}$                        |
 | 6   | candidate_z_rms       | the overdensity redshift uncertainty $z_{rms}$ |
 | 7   | candidate_rmax_median     | the average of the maximum distances in the peak interval of this (proto)cluster is used as the estimate of its projected radius $R_{PPM}$, in units of arcmin                        |
-| 8   | candidate_richness       | the number of these sources is taken as the estimate of the (proto)cluster richness $N_{select}$ |
+| 8   | candidate_richness       | the number of these sources is taken as the estimate of the (proto)cluster richness N<sub>select</sub> |
 | 9   | candidate_significance     | Beacon(SMG)'s id from $A^{3}COSMOS$ catalog                        |
 | 10   | delta_z       | Redshift peak offset z<sub>ov</sub>-z<sub>beacon</sub> |
 | 11   | peak_ov_density     | the overdensity value $\delta$ of the over-density peak projected coordinates                       |
