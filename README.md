@@ -47,7 +47,7 @@ Contain over 1500 overdensity candidates meet Category E.
 | 7   | `candidate_rmax_median`     | The average of the maximum distances in the peak interval of this (proto)cluster is used as the estimate of its projected radius $R_{PPM}$, in units of arcmin                        |
 | 8   | `candidate_richness`       | The number of these sources is taken as the estimate of the (proto)cluster richness N<sub>select</sub> |
 | 9   | `candidate_significance`     | The significance of the overdensity $\sigma$                        |
-| 10   | `delta_z`       | Redshift peak offset z<sub>ov</sub>-z<sub>beacon</sub> |
+| 10   | `delta_z`       | Redshift peak offset |z<sub>ov</sub>-z<sub>beacon</sub>| |
 | 11   | `peak_ov_density`     | The overdensity value $\delta$ of the over-density peak projected coordinates                       |
 | 12   | `R_w_arcmin`       | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
 | 13   | `R_w_kpc`     | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc                        |
