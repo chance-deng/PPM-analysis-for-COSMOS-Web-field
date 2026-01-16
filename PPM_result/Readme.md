@@ -2,6 +2,8 @@
 
 Contain over 1500 overdensity candidates meet Category E.
 
+![[Figure/image.png]]
+
 ## 1.SMG: SMGs_PPM.fits
 
 Main parameters:
