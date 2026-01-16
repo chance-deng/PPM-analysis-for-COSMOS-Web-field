@@ -18,11 +18,23 @@ COSMOS2025:[https://cosmos2025.iap.fr/catalog.html](https://cosmos2025.iap.fr/ca
 
 ---
 
-## 1.SMG: $\delta$ 400_final.fits
+# PPM result for SMGs and SFG control samples.
+
+Contain over 1500 overdensity candidates meet Category E.
+
+![Figure/image.png](https://github.com/chance-deng/PPM-analysis-for-COSMOS-Web-field/blob/main/Figure/image.png)
+
+## 1.SMG: SMGs_PPM.fits
 
 Main parameters:
 
-ID_1: Beacon(SMG)'s id from $A^{3}COSMOS$ catalog;
+ID_COSMOS2025: Beacon(SMG)'s id from $A^{3}COSMOS$ catalog;
+
+ID_A3COSMOS: Beacon(SMG)'s id from $A^{3}COSMOS$ catalog, data version 20220606;
+
+peak_ra: over-dnesity peak projected coordinates (RA[J2000] deg);
+
+peak_dec: over-dnesity peak projected coordinates (Dec[J2000] deg);
 
 candidate_z_mean: redshift of the over-density peak $z_{ov}$;
 
@@ -36,19 +48,13 @@ candidate_significance: the significance of the overdensity $\sigma$;
 
 delta_z: Redshift peak offset $|z_{ov}-z_{beacon}|$;
 
-peak_ov_density_1: the overdensity value $\delta$ of the over-density peak projected coordinates;
+peak_ov_density: the overdensity value $\delta$ of the over-density peak projected coordinates;
 
-beacon_ov_density_1: the overdensity value $\delta$ of the SMG projected coordinates;
+R_w_arcmin: the overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin;
 
-peak_ra_1: over-dnesity peak projected coordinates (RA[J2000] deg);
+R_w_kpc: the overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc;
 
-peak_dec_1: over-dnesity peak projected coordinates (Dec[J2000] deg);
-
-R_w_arcmin_1: the overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin;
-
-R_w_kpc_1: the overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc;
-
-theta_w_arcmin_1: Projected positional offset between SMGs and overdensity peaks, in units of arcmin.
+theta_w_arcmin: Projected positional offset between SMGs and overdensity peaks, in units of arcmin.
 
 ---
 
@@ -58,7 +64,7 @@ theta_w_arcmin_1: Projected positional offset between SMGs and overdensity peaks
 
 Main parameters:
 
-ID_1: Beacon(SFG)'s id from $COSMOS2025$ catalog;
+ID_COSMOS2025: Beacon(SFG)'s id from $COSMOS2025$ catalog;
 
 candidate_z_mean: redshift of the over-density peak $z_{ov}$;
 
@@ -92,7 +98,7 @@ theta_w_arcmin: Projected positional offset between SMGs and overdensity peaks, 
 
 Main parameters:
 
-ID_1: Beacon(SFG)'s id from $COSMOS2025$ catalog;
+ID_COSMOS2025: Beacon(SFG)'s id from $COSMOS2025$ catalog;
 
 candidate_z_mean: redshift of the over-density peak $z_{ov}$;
 
@@ -126,7 +132,7 @@ theta_w_arcmin: Projected positional offset between SMGs and overdensity peaks, 
 
 Main parameters:
 
-MSG_ID: Beacon(SFG)'s id from $COSMOS2025$ catalog;
+ID_COSMOS2025: Beacon(SFG)'s id from $COSMOS2025$ catalog;
 
 candidate_z_mean: redshift of the over-density peak $z_{ov}$;
 
