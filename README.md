@@ -21,6 +21,13 @@ For detailed steps, please refer to the paper: XXX
 
 # PPM result for SMGs and SFG control samples.
 
+The PPM result is comprised of 4 main files:
+
+- `SMGs_PPM.fits`
+- `mcombined_unique.fits`
+- `zcombined_unique.fits`
+- `zmcombined_unique.fits`
+
 Contain over 1500 overdensity candidates meet Category E.
 
 ![Figure/image.png](https://github.com/chance-deng/PPM-analysis-for-COSMOS-Web-field/blob/main/Figure/image.png)
