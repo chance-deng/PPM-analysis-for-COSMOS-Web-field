@@ -8,7 +8,7 @@ Details for PPM: [Castignani+2014](https://iopscience.iop.org/article/10.1088/00
 
 Details for catalog:
 
-[A3COSMOS](https://sites.google.com/view/a3cosmos);[Data version 20220606](http://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/685/A1)
+[A3COSMOS](https://sites.google.com/view/a3cosmos); [Data version 20220606](http://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/685/A1)
 
 [COSMOS2025](https://cosmos2025.iap.fr/catalog.html)
 
