@@ -32,6 +32,8 @@ Contain over 1500 overdensity candidates meet Category E.
 
 ![Figure/image.png](https://github.com/chance-deng/PPM-analysis-for-COSMOS-Web-field/blob/main/Figure/image.png)
 
+---
+
 ## 1.SMG: SMGs_PPM.fits
 
 | No. | Header name	      | Description
