@@ -6,9 +6,11 @@ We use a sample of 449 SMGs from the A<sup>3</sup>COSMOS catalog and control sam
 
 Details for catalog:
 
-[A<sup>3</sup>COSMOS](https://sites.google.com/view/a3cosmos); [Data version 20220606](http://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/685/A1)
+-[A<sup>3</sup>COSMOS](https://sites.google.com/view/a3cosmos); 
 
-[COSMOS2025](https://cosmos2025.iap.fr/catalog.html)
+ -[Data version 20220606](http://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/685/A1)
+
+-[COSMOS2025](https://cosmos2025.iap.fr/catalog.html)
 
 ---
 ## PPM Workflow.
