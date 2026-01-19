@@ -30,7 +30,7 @@ The PPM result is comprised of 4 main files:
 - `zcombined_unique.fits`
 - `zmcombined_unique.fits`
 
-Contains 52 the most reliable overdensity candidates and over 1500 sources meet Category E.
+Contains 52 the most reliable overdensity candidates meet Category A&B and over 1500 sources meet Category E.
 
 ![Figure/image.png](https://github.com/chance-deng/PPM-analysis-for-COSMOS-Web-field/blob/main/Figure/image.png)
 
