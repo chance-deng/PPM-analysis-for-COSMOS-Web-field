@@ -2,7 +2,7 @@
 
 ---
 
-We use a sample of 449 SMGs from the A<sup>3</sup>COSMOS catalog and control samples of main-sequence star-forming galaxies (SFGs) from COSMOS2025 in the COSMOS-Web JWST field, we apply the Poisson Probability Method (PPM, [Castignani+2014a](https://iopscience.iop.org/article/10.1088/0004-637X/792/2/113), [b](https://ui.adsabs.harvard.edu/abs/2014ApJ...792..114C/abstract) to identify overdensity structures. We upload here the results of PPM analysis performed on all samples (based on COSMOS2025 and A<sup>3</sup>COSMOS). For detailed explanations of these parameters, please refer to the paper: XXX
+We use a sample of 449 SMGs from the A<sup>3</sup>COSMOS catalog and control samples of main-sequence star-forming galaxies (SFGs) from COSMOS2025 in the COSMOS-Web JWST field, we apply the Poisson Probability Method (PPM, [Castignani+2014a](https://iopscience.iop.org/article/10.1088/0004-637X/792/2/113), [b](https://ui.adsabs.harvard.edu/abs/2014ApJ...792..114C/abstract)) to identify overdensity structures. We upload here the results of PPM analysis performed on all samples (based on COSMOS2025 and A<sup>3</sup>COSMOS). For detailed explanations of these parameters, please refer to the paper: XXX
 
 Details for catalog:
 
