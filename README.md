@@ -50,7 +50,7 @@ Contains 52 the most reliable overdensity candidates meet Category A&B and over 
 | 8   | `candidate_richness`       | The number of these sources is taken as the estimate of the (proto)cluster richness N<sub>select</sub> |
 | 9   | `candidate_significance`     | The significance of the overdensity $\sigma$                        |
 | 10   | `delta_z`       | Redshift peak offset \|z<sub>ov</sub>-z<sub>beacon</sub>\| |
-| 11   | `peak_ov_density`     | The overdensity value $\delta$ of the over-density peak projected coordinates                       |
+| 11   | `peak_ov_density`     | The density value $\delta+1$ of the over-density peak projected coordinates                       |
 | 12   | `R_w_arcmin`       | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
 | 13   | `R_w_kpc`     | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc                        |
 | 14   | `theta_w_arcmin`       | Projected positional offset between SMGs and overdensity peaks, in units of arcmin |
@@ -72,8 +72,8 @@ Contains 52 the most reliable overdensity candidates meet Category A&B and over 
 | 7   | `candidate_richness`       | The number of these sources is taken as the estimate of the (proto)cluster richness N<sub>select</sub> |
 | 8   | `candidate_significance`     | The significance of the overdensity $\sigma$                        |
 | 9   | `delta_z`       | Redshift peak offset \|z<sub>ov</sub>-z<sub>beacon</sub>\| |
-| 10   | `peak_ov_density`     | The overdensity value $\delta$ of the over-density peak projected coordinates                       |
-| 11   | `beacon_ov_density`     | The overdensity value $\delta$ of the SMG projected coordinates                        |
+| 10   | `peak_ov_density`     | The density value $\delta+1$ of the over-density peak projected coordinates                       |
+| 11   | `beacon_ov_density`     | The density value $\delta+1$ of the SMG projected coordinates                        |
 | 12   | `R_w_arcmin`       | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
 | 13   | `R_w_kpc`     | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc                        |
 | 14   | `theta_w_arcmin`       | Projected positional offset between SMGs and overdensity peaks, in units of arcmin |
@@ -94,8 +94,8 @@ Contains 52 the most reliable overdensity candidates meet Category A&B and over 
 | 7   | `candidate_richness`       | The number of these sources is taken as the estimate of the (proto)cluster richness N<sub>select</sub> |
 | 8   | `candidate_significance`     | The significance of the overdensity $\sigma$                        |
 | 9   | `delta_z`       | Redshift peak offset \|z<sub>ov</sub>-z<sub>beacon</sub>\| |
-| 10   | `peak_ov_density`     | The overdensity value $\delta$ of the over-density peak projected coordinates                       |
-| 11   | `beacon_ov_density`     | The overdensity value $\delta$ of the SMG projected coordinates                        |
+| 10   | `peak_ov_density`     | The density value $\delta+1$ of the over-density peak projected coordinates                       |
+| 11   | `beacon_ov_density`     | The density value $\delta+1$ of the SMG projected coordinates                        |
 | 12   | `R_w_arcmin`       | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
 | 13   | `R_w_kpc`     | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc                        |
 | 14   | `theta_w_arcmin`       | Projected positional offset between SMGs and overdensity peaks, in units of arcmin |
@@ -115,8 +115,8 @@ Contains 52 the most reliable overdensity candidates meet Category A&B and over 
 | 7   | `candidate_richness`       | The number of these sources is taken as the estimate of the (proto)cluster richness N<sub>select</sub> |
 | 8   | `candidate_significance`     | The significance of the overdensity $\sigma$                        |
 | 9   | `delta_z`       | Redshift peak offset \|z<sub>ov</sub>-z<sub>beacon</sub>\| |
-| 10   | `peak_ov_density`     | The overdensity value $\delta$ of the over-density peak projected coordinates                       |
-| 11   | `beacon_ov_density`     | The overdensity value $\delta$ of the SMG projected coordinates                        |
+| 10   | `peak_ov_density`     | The density value $\delta+1$ of the over-density peak projected coordinates                       |
+| 11   | `beacon_ov_density`     | The density value $\delta+1$ of the SMG projected coordinates                        |
 | 12   | `R_w_arcmin`       | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
 | 13   | `R_w_kpc`     | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc                        |
 | 14   | `theta_w_arcmin`       | Projected positional offset between SMGs and overdensity peaks, in units of arcmin |
