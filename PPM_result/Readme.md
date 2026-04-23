@@ -34,68 +34,29 @@ Contains 54 the most reliable overdensity candidates meet Category A&B and over 
 
 ---
 
-## 2.Main sequence(SFG):
+## 2.Main sequence SFG: 3005unique_SFG_assocwith_ovcandidates.fits
 
-### 2.1 mass match SFGs: mcombined_unique.fits
+### Catalog Columns Description
 
-| No. | Header name	      | Description
-| --- | ----------------- | --------------------------------------------------------- | 
-| 1   | `ID_COSMOS2025`     | Beacon(SFG)'s id from COSMOS2025 catalog                        |
-| 2   | `peak_ra`     | Over-dnesity peak projected coordinates (RA[J2000] deg)                        |
-| 3   | `peak_dec`       | Over-dnesity peak projected coordinates (Dec[J2000] deg) |
-| 4   | `candidate_z_mean`     | redshift of the over-density peak $z_{ov}$                        |
-| 5   | `candidate_z_rms`       | The overdensity redshift uncertainty $z_{rms}$ |
-| 6   | `candidate_rmax_median`     | The average of the maximum distances in the peak interval of this (proto)cluster is used as the estimate of its projected radius $R_{PPM}$, in units of arcmin                        |
-| 7   | `candidate_richness`       | The number of these sources is taken as the estimate of the (proto)cluster richness N<sub>select</sub> |
-| 8   | `candidate_significance`     | The significance of the overdensity $\sigma$                        |
-| 9   | `delta_z`       | Redshift peak offset \|z<sub>ov</sub>-z<sub>beacon</sub>\| |
-| 10   | `peak_ov_density`     | The overdensity value $\delta$ of the over-density peak projected coordinates                       |
-| 11   | `beacon_ov_density`     | The overdensity value $\delta$ of the SMG projected coordinates                        |
-| 12   | `R_w_arcmin`       | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
-| 13   | `R_w_kpc`     | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc                        |
-| 14   | `theta_w_arcmin`       | Projected positional offset between SMGs and overdensity peaks, in units of arcmin |
-
----
-
-### 2.2 redshift match SFGs: zcombined_unique.fits
-
-
-| No. | Header name	      | Description
-| --- | ----------------- | --------------------------------------------------------- | 
-| 1   | `ID_COSMOS2025`     | Beacon(SFG)'s id from COSMOS2025 catalog                        |
-| 2   | `peak_ra`     | Over-dnesity peak projected coordinates (RA[J2000] deg)                        |
-| 3   | `peak_dec`       | Over-dnesity peak projected coordinates (Dec[J2000] deg) |
-| 4   | `candidate_z_mean`     | redshift of the over-density peak $z_{ov}$                        |
-| 5   | `candidate_z_rms`       | The overdensity redshift uncertainty $z_{rms}$ |
-| 6   | `candidate_rmax_median`     | The average of the maximum distances in the peak interval of this (proto)cluster is used as the estimate of its projected radius $R_{PPM}$, in units of arcmin                        |
-| 7   | `candidate_richness`       | The number of these sources is taken as the estimate of the (proto)cluster richness N<sub>select</sub> |
-| 8   | `candidate_significance`     | The significance of the overdensity $\sigma$                        |
-| 9   | `delta_z`       | Redshift peak offset \|z<sub>ov</sub>-z<sub>beacon</sub>\| |
-| 10   | `peak_ov_density`     | The overdensity value $\delta$ of the over-density peak projected coordinates                       |
-| 11   | `beacon_ov_density`     | The overdensity value $\delta$ of the SMG projected coordinates                        |
-| 12   | `R_w_arcmin`       | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
-| 13   | `R_w_kpc`     | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc                        |
-| 14   | `theta_w_arcmin`       | Projected positional offset between SMGs and overdensity peaks, in units of arcmin |
-
----
-
-### 2.3 redshift match SFGs: zmcombine_unique.fits
-
-| No. | Header name	      | Description
-| --- | ----------------- | --------------------------------------------------------- | 
-| 1   | `ID_COSMOS2025`     | Beacon(SFG)'s id from COSMOS2025 catalog                        |
-| 2   | `peak_ra`     | Over-dnesity peak projected coordinates (RA[J2000] deg)                        |
-| 3   | `peak_dec`       | Over-dnesity peak projected coordinates (Dec[J2000] deg) |
-| 4   | `candidate_z_mean`     | redshift of the over-density peak $z_{ov}$                        |
-| 5   | `candidate_z_rms`       | The overdensity redshift uncertainty $z_{rms}$ |
-| 6   | `candidate_rmax_median`     | The average of the maximum distances in the peak interval of this (proto)cluster is used as the estimate of its projected radius $R_{PPM}$, in units of arcmin                        |
-| 7   | `candidate_richness`       | The number of these sources is taken as the estimate of the (proto)cluster richness N<sub>select</sub> |
-| 8   | `candidate_significance`     | The significance of the overdensity $\sigma$                        |
-| 9   | `delta_z`       | Redshift peak offset \|z<sub>ov</sub>-z<sub>beacon</sub>\| |
-| 10   | `peak_ov_density`     | The overdensity value $\delta$ of the over-density peak projected coordinates                       |
-| 11   | `beacon_ov_density`     | The overdensity value $\delta$ of the SMG projected coordinates                        |
-| 12   | `R_w_arcmin`       | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
-| 13   | `R_w_kpc`     | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc                        |
-| 14   | `theta_w_arcmin`       | Projected positional offset between SMGs and overdensity peaks, in units of arcmin |
+| No. | Header Name | Description |
+| :-- | :---------- | :---------- |
+| 1 | `id` | Beacon(SFG)'s id from COSMOS2025 catalog |
+| 2 | `ra` | Right Ascension of the beacon(SFG) source (J2000, degrees) |
+| 3 | `dec` | Declination of the beacon(SFG) source (J2000, degrees) |
+| 4 | `z` | Redshift of the beacon(SFG) source |
+| 5 | `peak_ra` | Over-density peak projected coordinates (RA[J2000] deg) |
+| 6 | `peak_dec` | Over-density peak projected coordinates (Dec[J2000] deg) |
+| 7 | `R_w_arcmin` | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
+| 8 | `R_w_kpc` | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc |
+| 9 | `theta_w_arcmin` | Projected positional offset between SMGs (SFGs) and overdensity peaks, in units of arcmin |
+| 10 | `R_PPM_arcmin` | Estimate of the projected radius $R_{PPM}$, in units of arcmin |
+| 11 | `peak_ov_density` | The overdensity value $\delta$ of the over-density peak projected coordinates |
+| 12 | `beacon_ov_density` | The overdensity value $\delta$ of the SMG (SFG) projected coordinates |
+| 13 | `candidate_z_mean` | Redshift of the over-density peak $z_{ov}$ |
+| 14 | `candidate_z_rms` | The overdensity redshift uncertainty $z_{rms}$ |
+| 15 | `candidate_rmax_median` | The average of the maximum distances in the peak interval of this (proto)cluster is used as the estimate of its projected radius $R_{PPM}$, in units of arcmin |
+| 16 | `candidate_richness` | The number of these sources is taken as the estimate of the (proto)cluster richness $N_{select}$ |
+| 17 | `candidate_significance` | The significance of the overdensity $\sigma$ |
+| 18 | `delta_z` | Redshift peak offset $|z_{ov} - z_{beacon}|$ |
 
 ---
