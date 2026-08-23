@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use these data, please cite the Zenodo record and the associated article."
+title: "The data for Do Submillimeter Galaxies Trace Megaparsec Large-scale Structures? -- An Overdensity Analysis of 449 Submillimeter Galaxies in COSMOS"
+type: dataset
+license: CC-BY-4.0
+repository-code: "https://github.com/chance-deng/PPM-analysis-for-COSMOS-Web-field"
+abstract: >-
+  Derived Poisson Probability Method catalogs and JWST RGB cutouts for SMG and
+  control-SFG overdensity candidates in the COSMOS-Web field.
+authors:
+  - family-names: "Deng"
+    given-names: "Canze"
+    affiliation: "Purple Mountain Observatory, Chinese Academy of Sciences, 10 Yuanhua Road, Nanjing 210023, China; School of Astronomy and Space Sciences, University of Science and Technology of China, Hefei 230026, China"
+    orcid: "https://orcid.org/0009-0005-2363-8626"
+
+# Add the version DOI below after Zenodo publishes the GitHub release.

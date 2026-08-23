@@ -1,0 +1,27 @@
+{
+  "title": "The data for Do Submillimeter Galaxies Trace Megaparsec Large-scale Structures? -- An Overdensity Analysis of 449 Submillimeter Galaxies in COSMOS",
+  "upload_type": "dataset",
+  "description": "This dataset contains the derived Poisson Probability Method (PPM) products for the analysis of galaxy overdensities around submillimeter galaxies (SMGs) and control main-sequence star-forming galaxies (SFGs) in the COSMOS-Web field. It includes (1) a FITS table with 274 SMG beacon-overdensity associations, (2) a FITS table with 3,005 control-SFG beacon-overdensity associations, and (3) 50 derived JWST RGB cutouts at 10 arcmin and the matching 50 cutouts at 10 arcsec. Read FITS extension 1 (Joined) in each catalog; the README provides complete column definitions and an astropy example. This deposit distributes derived PPM catalogs and visualization cutouts, not the parent A3COSMOS, COSMOS2025, or JWST survey products. Obtain those parent data from their original providers and follow their terms of use.",
+  "creators": [
+    {
+      "name": "Deng, Canze",
+      "affiliation": "Purple Mountain Observatory, Chinese Academy of Sciences, 10 Yuanhua Road, Nanjing 210023, China; School of Astronomy and Space Sciences, University of Science and Technology of China, Hefei 230026, China",
+      "orcid": "0009-0005-2363-8626"
+    }
+  ],
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "COSMOS-Web",
+    "galaxy overdensities",
+    "submillimeter galaxies",
+    "star-forming galaxies",
+    "Poisson Probability Method",
+    "FITS"
+  ],
+  "communities": [
+    {
+      "identifier": "7a140649-c350-45e3-a41d-eb8f04abd3d6"
+    }
+  ]
+}

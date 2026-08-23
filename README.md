@@ -1,89 +1,99 @@
-# PPM-analysis-for-COSMOS-Web-field
+# Poisson Probability Method Results and JWST RGB Cutouts for SMGs and Control SFGs in the COSMOS-Web Field
 
----
+This repository is the data package for the analysis of galaxy overdensities around submillimeter galaxies (SMGs) and main-sequence star-forming-galaxy (SFG) control sources in the COSMOS-Web field. It contains two machine-readable FITS catalogs produced with the Poisson Probability Method (PPM) and 100 derived JWST RGB cutouts. It is intended for deposit in Zenodo and citation from the associated manuscript.
 
-We use a sample of 449 SMGs from the A<sup>3</sup>COSMOS catalog and control samples of main-sequence star-forming galaxies (SFGs) from COSMOS2025 in the COSMOS-Web JWST field, we apply the Poisson Probability Method (PPM, [Castignani+2014a](https://iopscience.iop.org/article/10.1088/0004-637X/792/2/113), [b](https://ui.adsabs.harvard.edu/abs/2014ApJ...792..114C/abstract)) to identify overdensity structures. We upload here the results of PPM analysis performed on all samples (based on COSMOS2025 and A<sup>3</sup>COSMOS). For detailed explanations of these parameters, please refer to the paper: XXX
+> **Release status.** This repository has a release-ready [`.zenodo.json`](.zenodo.json) for GitHub--Zenodo archiving. Its designated data creator is Canze Deng (ORCID: [0009-0005-2363-8626](https://orcid.org/0009-0005-2363-8626)). Confirm that no other person made a substantive contribution to these deposited data products before creating the GitHub release.
 
-Details for catalog:
+## Contents
 
-- [A<sup>3</sup>COSMOS](https://sites.google.com/view/a3cosmos); 
+| Path | Contents | How to use it |
+| --- | --- | --- |
+| `PPM_result/274unique_SMG_assocwith_ovcandidates.fits` | PPM associations for 274 SMGs | Read FITS extension 1 (`Joined`); see the SMG data dictionary below. |
+| `PPM_result/3005unique_SFG_assocwith_ovcandidates.fits` | PPM associations for 3,005 main-sequence SFG control sources | Read FITS extension 1 (`Joined`); see the SFG data dictionary below. |
+| `JWST_Image/10arcmin/` | 50 RGB cutouts, 10 arcmin on a side | Filenames are `rgb_image_<source ID>.png`. |
+| `JWST_Image/10arcsec/` | 50 RGB cutouts, 10 arcsec on a side | The same 50 source IDs, for close inspection. |
+| `Figure/image.png` | Summary figure | Contextual visualization of the PPM results. |
+| `workflow.png` | PPM workflow diagram | Overview of the analysis workflow. |
 
- - [Data version 20220606](http://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/685/A1)
+The two FITS catalogs have 274 and 3,005 rows, respectively. Each image directory contains 50 PNG files, matched one-to-one by source ID.
 
+## Scientific context and scope
+
+We apply the Poisson Probability Method (PPM; [Castignani et al. 2014a](https://iopscience.iop.org/article/10.1088/0004-637X/792/2/113), [2014b](https://ui.adsabs.harvard.edu/abs/2014ApJ...792..114C/abstract)) to a sample of 449 SMGs from A<sup>3</sup>COSMOS and to main-sequence SFG control samples from COSMOS2025 within the COSMOS-Web JWST field. The resulting tables record associations between each beacon source and its identified overdensity candidate.
+
+This deposit distributes **derived PPM products and derived RGB cutouts only**. It does not redistribute the parent A<sup>3</sup>COSMOS, COSMOS2025, or JWST survey catalogs/images. Users needing those inputs must obtain them from their original providers and follow their applicable terms of use:
+
+- [A<sup>3</sup>COSMOS](https://sites.google.com/view/a3cosmos), data version 20220606: [VizieR J/A+A/685/A1](http://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/685/A1)
 - [COSMOS2025](https://cosmos2025.iap.fr/catalog.html)
 
----
-## PPM Workflow.
+For the sample definition, PPM configuration, candidate categories, and scientific interpretation, consult the associated article, *Do Submillimeter Galaxies Trace Megaparsec Large-scale Structures? -- An Overdensity Analysis of 449 Submillimeter Galaxies in COSMOS*. Add its ADS/DOI link after publication.
 
-For detailed steps, please refer to the paper: XXX
+## Reading the FITS tables
+
+The binary table is in extension 1, named `Joined`. For example:
+
+```python
+from astropy.table import Table
+
+smg = Table.read("PPM_result/274unique_SMG_assocwith_ovcandidates.fits", hdu=1)
+sfg = Table.read("PPM_result/3005unique_SFG_assocwith_ovcandidates.fits", hdu=1)
+print(smg.colnames)
+```
+
+Coordinates are ICRS/J2000 and are expressed in degrees unless noted otherwise. Radii and offsets carry their units in the column name. Redshifts are dimensionless. A `Separation` column in both tables is the angular separation between matched catalog objects in arcsec.
+
+### SMG PPM catalog: `274unique_SMG_assocwith_ovcandidates.fits`
+
+| Column | Description |
+| --- | --- |
+| `ID` | SMG beacon identifier. |
+| `zfinal` | Final redshift in the matched SMG catalog; the value `-99` denotes an unavailable value. |
+| `RAdeg`, `DEdeg` | SMG beacon right ascension and declination (J2000, deg). |
+| `z` | Redshift used for the SMG beacon in the PPM association. |
+| `z_ov`, `ez_ov` | Overdensity-peak redshift and its redshift uncertainty. |
+| `sig_ov` | Overdensity significance. |
+| `Nselected` | Number of selected sources, used as an estimate of the (proto)cluster richness. |
+| `R_PPM_arcmin` | PPM projected-radius estimate (arcmin). |
+| `R_w_arcmin`, `R_w_kpc` | Radius where the overdensity falls to 1% of its peak value (arcmin and kpc). |
+| `peak_ra`, `peak_dec` | Projected overdensity-peak position (J2000, deg). |
+| `theta_w_arcmin` | Projected offset between the SMG and overdensity peak (arcmin). |
+| `peak_ov_density` | Overdensity value at the projected peak position. |
+| `flux_850` | 850-um flux density of the SMG. |
+| `Separation` | Angular separation of matched catalog objects (arcsec). |
+
+### SFG-control PPM catalog: `3005unique_SFG_assocwith_ovcandidates.fits`
+
+| Column | Description |
+| --- | --- |
+| `id` | SFG beacon identifier from COSMOS2025. |
+| `ra`, `dec` | SFG beacon right ascension and declination (J2000, deg). |
+| `z` | SFG beacon redshift. |
+| `peak_ra`, `peak_dec` | Projected overdensity-peak position (J2000, deg). |
+| `R_w_arcmin`, `R_w_kpc` | Radius where the overdensity falls to 1% of its peak value (arcmin and kpc). |
+| `theta_w_arcmin` | Projected offset between the SFG and overdensity peak (arcmin). |
+| `R_PPM_arcmin` | PPM projected-radius estimate (arcmin). |
+| `peak_ov_density`, `beacon_ov_density` | Overdensity values at the peak and beacon positions. |
+| `candidate_z_mean`, `candidate_z_rms` | Candidate overdensity redshift and redshift uncertainty. |
+| `candidate_rmax_median` | Median maximum radius across the candidate peak interval (arcmin). |
+| `candidate_richness` | Number of selected sources, used as a richness estimate. |
+| `candidate_significance` | Overdensity significance. |
+| `delta_z` | Absolute redshift difference between the candidate peak and beacon. |
+| `Separation` | Angular separation of matched catalog objects (arcsec). |
+
+## JWST RGB cutouts
+
+The 10-arcmin and 10-arcsec PNG cutouts are both centered on the corresponding overdensity-candidate coordinates. Match an image to its source using the numeric source identifier in `rgb_image_<source ID>.png`. These image products are for visualization and contextual inspection; the FITS catalogs are the machine-readable analysis products.
 
 ![PPM workflow](workflow.png)
 
----
+## License and citation
 
-## PPM result for SMGs and SFG control samples.
+The original material in this repository is released under [CC BY 4.0](LICENSE). Cite the Zenodo DOI once it is minted; a citation template is provided in [CITATION.cff](CITATION.cff). Use of the external input surveys remains subject to their own licenses and acknowledgements.
 
-The PPM result is comprised of 2 main files:
+For the final manuscript, insert the DOI provided by Zenodo using, for example:
 
-- `274unique_SMG_assocwith_ovcandidates.fits`
-- `3005unique_SFG_assocwith_ovcandidates.fits`
+```latex
+\dataset[doi:10.5281/zenodo.XXXXXXX]{The data for Do Submillimeter Galaxies Trace Megaparsec Large-scale Structures? -- An Overdensity Analysis of 449 Submillimeter Galaxies in COSMOS}
+```
 
-Contains 54 the most reliable overdensity candidates meet Category A&B and over 3000 sources meet Category E.
-
-![Figure/image.png](https://github.com/chance-deng/PPM-analysis-for-COSMOS-Web-field/blob/main/Figure/image.png)
-
----
-
-## 1.SMG: 274unique_SMG_assocwith_ovcandidates.fits
-
-| No. | Header Name | Description |
-| :-- | :---------- | :---------- |
-| 1 | `ID` | Beacon(SMG)'s id from COSMOS2025 catalog |
-| 2 | `RAdeg` | Right Ascension of the beacon(SMG) source (J2000, degrees) |
-| 3 | `DEdeg` | Declination of the beacon(SMG) source (J2000, degrees) |
-| 4 | `z` | Redshift of the beacon(SMG) source |
-| 5 | `z_ov` | Redshift of the over-density peak $z_{ov}$ |
-| 6 | `ez_ov` | The overdensity redshift uncertainty $z_{rms}$ |
-| 7 | `sig_ov` | The significance of the overdensity $\sigma$ |
-| 8 | `Nselected` | The number of these sources is taken as the estimate of the (proto)cluster richness $N_{select}$ |
-| 9 | `R_PPM_arcmin` | The average of the maximum distances in the peak interval of this (proto)cluster is used as the estimate of its projected radius $R_{PPM}$, in units of arcmin |
-| 10 | `R_w_arcmin` | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
-| 11 | `R_w_kpc` | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc |
-| 12 | `peak_ra` | Over-density peak projected coordinates (RA[J2000] deg) |
-| 13 | `peak_dec` | Over-density peak projected coordinates (Dec[J2000] deg) |
-| 14 | `theta_w_arcmin` | Projected positional offset between SMGs and overdensity peaks, in units of arcmin |
-| 15 | `peak_ov_density` | The overdensity value $\delta$ of the over-density peak projected coordinates |
-| 16 | `flux_850` | Flux density at 850 $\mu$m |
-
----
-
-## 2.Main sequence SFG: 3005unique_SFG_assocwith_ovcandidates.fits
-
-### Catalog Columns Description
-
-| No. | Header Name | Description |
-| :-- | :---------- | :---------- |
-| 1 | `id` | Beacon(SFG)'s id from COSMOS2025 catalog |
-| 2 | `ra` | Right Ascension of the beacon(SFG) source (J2000, degrees) |
-| 3 | `dec` | Declination of the beacon(SFG) source (J2000, degrees) |
-| 4 | `z` | Redshift of the beacon(SFG) source |
-| 5 | `peak_ra` | Over-density peak projected coordinates (RA[J2000] deg) |
-| 6 | `peak_dec` | Over-density peak projected coordinates (Dec[J2000] deg) |
-| 7 | `R_w_arcmin` | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of arcmin |
-| 8 | `R_w_kpc` | The overdensity value $\delta$ at the peak dropping to one percent of the peak value size in units of kpc |
-| 9 | `theta_w_arcmin` | Projected positional offset between SMGs (SFGs) and overdensity peaks, in units of arcmin |
-| 10 | `R_PPM_arcmin` | Estimate of the projected radius $R_{PPM}$, in units of arcmin |
-| 11 | `peak_ov_density` | The overdensity value $\delta$ of the over-density peak projected coordinates |
-| 12 | `beacon_ov_density` | The overdensity value $\delta$ of the SMG (SFG) projected coordinates |
-| 13 | `candidate_z_mean` | Redshift of the over-density peak $z_{ov}$ |
-| 14 | `candidate_z_rms` | The overdensity redshift uncertainty $z_{rms}$ |
-| 15 | `candidate_rmax_median` | The average of the maximum distances in the peak interval of this (proto)cluster is used as the estimate of its projected radius $R_{PPM}$, in units of arcmin |
-| 16 | `candidate_richness` | The number of these sources is taken as the estimate of the (proto)cluster richness $N_{select}$ |
-| 17 | `candidate_significance` | The significance of the overdensity $\sigma$ |
-| 18 | `delta_z` | Redshift peak offset $|z_{ov} - z_{beacon}|$ |
-
----
-
-## JWST RGB cut image
-
-We provide two sets of cropped James Webb Space Telescope (JWST) images for each overdensity candidate, both centered on the central coordinates of the candidate, with fields of view (FOV) of 10 arcmin and 10 arcsec, respectively.
+Replace `10.5281/zenodo.XXXXXXX` with the version DOI minted for the GitHub release.
