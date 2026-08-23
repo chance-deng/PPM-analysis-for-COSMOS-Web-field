@@ -1,6 +1,6 @@
-# Poisson Probability Method Results and JWST RGB Cutouts for SMGs and Control SFGs in the COSMOS-Web Field
+# PPM Results and JWST RGB Cutouts for SMGs and Control SFGs in the COSMOS-Web Field
 
-This repository is the data package for the analysis of galaxy overdensities around submillimeter galaxies (SMGs) and main-sequence star-forming-galaxy (SFG) control sources in the COSMOS-Web field. It contains two machine-readable FITS catalogs produced with the Poisson Probability Method (PPM) and 100 derived JWST RGB cutouts. It is intended for deposit in Zenodo and citation from the associated manuscript.
+This repository is the data package for the analysis of galaxy overdensities around submillimeter galaxies (SMGs) and main-sequence star-forming-galaxy (SFG) control sources in the COSMOS-Web field. It contains two machine-readable FITS catalogs produced with the Poisson Probability Method (PPM) and JWST RGB cutouts. It is intended for deposit in Zenodo and citation from the associated manuscript.
 
 > **Release status.** This repository has a release-ready [`.zenodo.json`](.zenodo.json) for GitHub--Zenodo archiving. Its designated data creator is Canze Deng (ORCID: [0009-0005-2363-8626](https://orcid.org/0009-0005-2363-8626)). Confirm that no other person made a substantive contribution to these deposited data products before creating the GitHub release.
 
@@ -12,8 +12,6 @@ This repository is the data package for the analysis of galaxy overdensities aro
 | `PPM_result/3005unique_SFG_assocwith_ovcandidates.fits` | PPM associations for 3,005 main-sequence SFG control sources | Read FITS extension 1 (`Joined`); see the SFG data dictionary below. |
 | `JWST_Image/10arcmin/` | 50 RGB cutouts, 10 arcmin on a side | Filenames are `rgb_image_<source ID>.png`. |
 | `JWST_Image/10arcsec/` | 50 RGB cutouts, 10 arcsec on a side | The same 50 source IDs, for close inspection. |
-| `Figure/image.png` | Summary figure | Contextual visualization of the PPM results. |
-| `workflow.png` | PPM workflow diagram | Overview of the analysis workflow. |
 
 The two FITS catalogs have 274 and 3,005 rows, respectively. Each image directory contains 50 PNG files, matched one-to-one by source ID.
 
