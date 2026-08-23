@@ -18,6 +18,8 @@ The two FITS catalogs have 274 and 3,005 rows, respectively. Each image director
 
 We apply the Poisson Probability Method (PPM; [Castignani et al. 2014a](https://iopscience.iop.org/article/10.1088/0004-637X/792/2/113), [2014b](https://ui.adsabs.harvard.edu/abs/2014ApJ...792..114C/abstract)) to a sample of 449 SMGs from A<sup>3</sup>COSMOS and to main-sequence SFG control samples from COSMOS2025 within the COSMOS-Web JWST field. The resulting tables record associations between each beacon source and its identified overdensity candidate.
 
+![PPM workflow](workflow.png)
+
 This deposit distributes **derived PPM products and derived RGB cutouts only**. It does not redistribute the parent A<sup>3</sup>COSMOS, COSMOS2025, or JWST survey catalogs/images. Users needing those inputs must obtain them from their original providers and follow their applicable terms of use:
 
 - [A<sup>3</sup>COSMOS](https://sites.google.com/view/a3cosmos), data version 20220606: [VizieR J/A+A/685/A1](http://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/685/A1)
@@ -81,7 +83,7 @@ Coordinates are ICRS/J2000 and are expressed in degrees unless noted otherwise. 
 
 The 10-arcmin and 10-arcsec PNG cutouts are both centered on the corresponding overdensity-candidate coordinates. Match an image to its source using the numeric source identifier in `rgb_image_<source ID>.png`. These image products are for visualization and contextual inspection; the FITS catalogs are the machine-readable analysis products.
 
-![PPM workflow](workflow.png)
+
 
 ## License and citation
 
