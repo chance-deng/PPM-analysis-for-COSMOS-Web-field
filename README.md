@@ -81,7 +81,7 @@ Coordinates are ICRS/J2000 and are expressed in degrees unless noted otherwise. 
 
 ## JWST RGB cutouts
 
-The 10-arcmin and 10-arcsec PNG cutouts are both centered on the corresponding overdensity-candidate coordinates. Match an image to its source using the numeric source identifier in `rgb_image_<source ID>.png`. These image products are for visualization and contextual inspection; the FITS catalogs are the machine-readable analysis products.
+The 10-arcmin and 10-arcsec PNG cutouts are both centered on the corresponding overdensity-candidate coordinates. Match an image to its source using the numeric source identifier in `rgb_image_<source ID>.png`. These image products are for visualization and contextual inspection; the FITS catalogs are the machine-readable analysis products. Please note that due to missing data in certain observational bands for SFG IDs 243115 and 352015, their corresponding RGB images are not provided.
 
 
 
