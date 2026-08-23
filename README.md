@@ -2,7 +2,6 @@
 
 This repository is the data package for the analysis of galaxy overdensities around submillimeter galaxies (SMGs) and main-sequence star-forming-galaxy (SFG) control sources in the COSMOS-Web field. It contains two machine-readable FITS catalogs produced with the Poisson Probability Method (PPM) and JWST RGB cutouts. It is intended for deposit in Zenodo and citation from the associated manuscript.
 
-> **Release status.** This repository has a release-ready [`.zenodo.json`](.zenodo.json) for GitHub--Zenodo archiving. Its designated data creator is Canze Deng (ORCID: [0009-0005-2363-8626](https://orcid.org/0009-0005-2363-8626)). Confirm that no other person made a substantive contribution to these deposited data products before creating the GitHub release.
 
 ## Contents
 
