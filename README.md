@@ -92,7 +92,6 @@ Two supplementary figures accompany the manuscript figures:
 - **Figure 13 supplementary figure:** one JWST RGB mosaic of all brightest SMGs, shown with 5 arcsec cutouts. Each source is annotated with its identifier, morphology class (Merger or Non-Merger), and environment classification (Category A--E).
 - **Figure 18 supplementary figure:** one complete COS-SBC4 diagnostic figure containing the PPM plot and the two-dimensional density-map panels.
 
-The corresponding figure files should be placed in the repository before the GitHub Release is created. They are not yet present in the current local checkout; after adding them, update the two entries in the Contents table above with their exact paths.
 
 ## License and citation
 
