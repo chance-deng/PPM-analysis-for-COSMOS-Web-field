@@ -27,7 +27,7 @@ This deposit distributes **derived PPM products and derived RGB cutouts only**. 
 - [A<sup>3</sup>COSMOS](https://sites.google.com/view/a3cosmos), data version 20220606: [VizieR J/A+A/685/A1](http://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/685/A1)
 - [COSMOS2025](https://cosmos2025.iap.fr/catalog.html)
 
-For the sample definition, PPM configuration, candidate categories, and scientific interpretation, consult the associated article, *Do Submillimeter Galaxies Trace Megaparsec Large-scale Structures? -- An Overdensity Analysis of 449 Submillimeter Galaxies in COSMOS*. Add its ADS/DOI link after publication.
+For the sample definition, PPM configuration, candidate categories, and scientific interpretation, consult the associated article, *Do Submillimeter Galaxies Trace Megaparsec Large-scale Structures? -- An Overdensity Analysis of 449 Submillimeter Galaxies in COSMOS*.
 
 ## Reading the FITS tables
 
