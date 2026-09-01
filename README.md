@@ -2,7 +2,7 @@
 
 This repository is the data package for the analysis of galaxy overdensities around submillimeter galaxies (SMGs) and main-sequence star-forming-galaxy (SFG) control sources in the COSMOS-Web field. It contains machine-readable FITS catalogs produced with the Poisson Probability Method (PPM) and JWST RGB cutouts.
 
-！[zenodo](https://doi.org/10.5281/zenodo.22230347)
+[![DOI](https://img.shields.io/badge/DOI-10.3847%2F1538--4365%2Fae1cb9-red)](https://doi.org/10.5281/zenodo.22230347)
 
 ## Contents
 
