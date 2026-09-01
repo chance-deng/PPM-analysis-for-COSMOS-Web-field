@@ -96,12 +96,6 @@ The corresponding figure-set files should be placed in the repository before the
 
 ## License and citation
 
-The original material in this repository is released under [CC BY 4.0](LICENSE). Cite the Zenodo DOI once it is minted; a citation template is provided in [CITATION.cff](CITATION.cff). Use of the external input surveys remains subject to their own licenses and acknowledgements.
+The original material in this repository is released under [CC BY 4.0](LICENSE). 
 
-For the final manuscript, insert the DOI provided by Zenodo using:
-
-```latex
-\dataset[doi:10.5281/zenodo.XXXXXXX]{The data for Do Submillimeter Galaxies Trace Megaparsec Large-scale Structures? -- An Overdensity Analysis of 449 Submillimeter Galaxies in COSMOS}
-```
-
-Replace `10.5281/zenodo.XXXXXXX` with the version DOI minted for the GitHub release.
+Citation: Deng et al. 2026
