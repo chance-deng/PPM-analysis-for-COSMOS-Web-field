@@ -11,8 +11,8 @@ This repository is the data package for the analysis of galaxy overdensities aro
 | `PPM_result/3005unique_SFG_assocwith_ovcandidates.fits` | PPM associations for 3,005 main-sequence SFG control sources | Read FITS extension 1 (`Joined`); see the SFG data dictionary below. |
 | `JWST_Image/10arcmin/` | 50 RGB cutouts, 10 arcmin on a side | Filenames are `rgb_image_<source ID>.png`. |
 | `JWST_Image/10arcsec/` | 50 RGB cutouts, 10 arcsec on a side | The same 50 source IDs, for close inspection. |
-| Figure 13 supplementary figure set | One annotated JWST RGB image mosaic of the brightest SMGs | See “Supplementary figure sets” below. |
-| Figure 18 supplementary figure set | One complete diagnostic-panel figure for COS-SBC4 | See “Supplementary figure sets” below. |
+| Figure 13 supplementary figure | One annotated JWST RGB image mosaic of the brightest SMGs | See “Supplementary figures” below. |
+| Figure 18 supplementary figure | One complete diagnostic-panel figure for COS-SBC4 | See “Supplementary figures” below. |
 
 The two FITS catalogs have 274 and 3,005 rows, respectively. Each image directory contains 50 PNG files, matched one-to-one by source ID.
 
@@ -85,14 +85,14 @@ Coordinates are ICRS/J2000 and are expressed in degrees unless noted otherwise. 
 
 The 10-arcmin and 10-arcsec PNG cutouts are both centered on the corresponding overdensity-candidate coordinates. Match an image to its source using the numeric source identifier in `rgb_image_<source ID>.png`. These image products are for visualization and contextual inspection; the FITS catalogs are the machine-readable analysis products. Please note that due to missing data in certain observational bands for SFG IDs 243115 and 352015, their corresponding RGB images are not provided.
 
-## Supplementary figure sets
+## Supplementary figures
 
-Two supplementary figure sets accompany the manuscript figures:
+Two supplementary figures accompany the manuscript figures:
 
-- **Figure 13 supplementary figure set:** one JWST RGB mosaic of all brightest SMGs, shown with 5 arcsec cutouts. Each source is annotated with its identifier, morphology class (Merger or Non-Merger), and environment classification (Category A--E).
-- **Figure 18 supplementary figure set:** one complete COS-SBC4 diagnostic figure containing the PPM plot and the two-dimensional density-map panels.
+- **Figure 13 supplementary figure:** one JWST RGB mosaic of all brightest SMGs, shown with 5 arcsec cutouts. Each source is annotated with its identifier, morphology class (Merger or Non-Merger), and environment classification (Category A--E).
+- **Figure 18 supplementary figure:** one complete COS-SBC4 diagnostic figure containing the PPM plot and the two-dimensional density-map panels.
 
-The corresponding figure-set files should be placed in the repository before the GitHub Release is created. They are not yet present in the current local checkout; after adding them, update the two entries in the Contents table above with their exact paths.
+The corresponding figure files should be placed in the repository before the GitHub Release is created. They are not yet present in the current local checkout; after adding them, update the two entries in the Contents table above with their exact paths.
 
 ## License and citation
 
