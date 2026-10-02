@@ -99,4 +99,4 @@ Two supplementary figures accompany the manuscript figures:
 
 The original material in this repository is released under [CC BY 4.0](LICENSE). 
 
-Citation: [![Deng et al. 2026]](https://arxiv.org/abs/2610.01136)
+Citation: [Deng et al. 2026](https://arxiv.org/abs/2610.01136)
